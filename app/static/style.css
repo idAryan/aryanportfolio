@@ -148,6 +148,7 @@ nav .right a span{
     display:flex;
     align-items: center;
     gap:50px;
+    margin-bottom: 50px;
 }
 .project-section .group .project-details{
     text-align: center;

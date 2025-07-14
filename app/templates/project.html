@@ -2,6 +2,7 @@
 {% block projects %}
     <section id="project" class="project-section">
         <h2>Projects</h2>
+        <!-- 1. Morse Code -->
         <div class="group">
             <div class="project-details">
                 <img src="{{ url_for('static', filename="Images/morsecode.webp") }}" alt="person">
@@ -9,7 +10,35 @@
                 <p>Final Year-Team Project</p>
             </div>
             <div class="text">
-                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting"
+                "A innovative project, In which a user can use mobile flash signals to convert the written text into
+                morse code and then flash light with temporal constraints. After that the receiver decodes the messege received via flash signals through
+                by detecting flash signals via converting the image to various Image processing techniques
+                and detected the flash light through thresholding and Contours. In last applied Aspect Ratio filtering
+                on bounding box and flash signal record timing is noted via python library time. After that it maps to the morse to letter hashmap and output is displayed.  "
+            </div>
+        </div>
+
+        <!-- 2. Image Forgery -->
+        <div class="group">
+            <div class="project-details">
+                <img src="{{ url_for('static', filename="Images/imageforgery.webp") }}" alt="imageforgery">
+                <p>A Research project Detecting Fake Images with CNN + Traditional Methods</p>
+                <p>Personal Research Project</p>
+            </div>
+            <div class="text">
+                "A deep learning-powered web application to detect Copy-Move Image Forgery using a custom-trained convolutional neural network (CNN). Built with TensorFlow/Keras, trained via Jupyter Notebook, and deployed using Flask. "
+            </div>
+        </div>
+
+        <!-- Cat vs Dog Telegram bot -->
+        <div class="group">
+            <div class="project-details">
+                <img src="{{ url_for('static', filename="Images/catvsdog.gif") }}" alt="catvsdog">
+                <p>Cat vs Dog prediction using deep learning prediction using telegram bot</p>
+                <p>Personal deep learning Project</p>
+            </div>
+            <div class="text">
+                "Implemented a convolutional neural network (2 Convo + 2 Dense Layer) trained on catvsdog dataset. Extracted tflite format, and used python-telegram-bot for realtime integration with telegram bot."
             </div>
         </div>
     </section>
